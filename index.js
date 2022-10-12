@@ -43,7 +43,7 @@ const download = (url, destination) =>
 
     const result = await page.evaluate(() => {
       //selector
-      const pics = [...document.querySelectorAll("a.fileThumb")].map(
+      const pics = [...document.querySelectorAll("selector")].map(
         (imgNode) => imgNode.href //selector property with image data
       );
       //returns an array with the url
